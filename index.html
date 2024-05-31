@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PathViewer &copy; test</title>
+    
+  </head>
+  <body onload="loading()">
+    <div id="loadingPage"><div id="loader"></div></div>
+    <div id='mainPage'></div>
+    <script>
+      var myVar;
+  
+      function loading() {
+        document.getElementById("mainPage").style.visibility = "hidden";
+        myVar = setTimeout(showPage, 1500);
+      }
+  
+      function showPage() {
+        document.getElementById("loadingPage").style.display = "none";
+        document.getElementById("mainPage").style.visibility = "visible";
+      }
+  
+      document.oncontextmenu = function () { return false };
+  
+    </script>
+ 
+
+  </body>
+</html>
